@@ -12,6 +12,15 @@
 - явный индикатор офлайн-статуса при отсутствии интернета;
 - работа в условиях нестабильной мобильной сети (включая 3G).
 
+## Где настройки базы данных
+
+Настройки БД вынесены в `backend/`:
+
+- `backend/.env.example` — переменные БД и `DATABASE_URL`.
+- `backend/docker-compose.yml` — запуск PostgreSQL.
+- `backend/schema.sql` — таблицы для пользователей, групп, сообщений и live location.
+- `backend/README.md` — инструкция запуска.
+
 ## Что уже есть в прототипе
 
 1. **SwiftUI-каркас приложения** с вкладками `Чаты`, `Группы`, `Настройки`.
@@ -22,26 +31,12 @@
 6. **Connectivity monitor** на `NWPathMonitor` с офлайн-плашкой.
 7. **Сервис удаленного хранения** `RemoteStore` + `APIStore` (интерфейс для backend API).
 
-## Минимальный backend для хранения данных
+## Настройка API URL в iOS
 
-Рекомендуемая схема:
+По умолчанию клиент использует `API_BASE_URL` из `Info.plist`.
 
-- `users(id, phone, display_name, avatar_url)`
-- `groups(id, name, avatar_url, created_by)`
-- `group_members(group_id, user_id, role)`
-- `messages(id, group_id, sender_id, content_type, body, sent_at)`
-- `locations(id, group_id, user_id, lat, lon, created_at)`
-
-Подходит PostgreSQL + WebSocket (для realtime) + REST API.
-
-## iOS permissions (Info.plist)
-
-Нужно добавить:
-
-- `NSContactsUsageDescription`
-- `NSPhotoLibraryUsageDescription`
-- `NSLocationWhenInUseUsageDescription`
-- `NSLocationAlwaysAndWhenInUseUsageDescription` (если нужно фоновое отслеживание)
+- Пример ключа: `ios/MsngrApp/Resources/Info.plist.example`
+- Fallback URL: `http://localhost:8080`
 
 ## Важно
 

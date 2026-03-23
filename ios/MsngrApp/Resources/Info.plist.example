@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>API_BASE_URL</key>
+    <string>https://api.example.ru</string>
+
+    <key>NSContactsUsageDescription</key>
+    <string>Приложению нужен доступ к контактам для поиска собеседников.</string>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>Приложению нужен доступ к фотогалерее для отправки изображений.</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>Геопозиция нужна для отправки live location в группах.</string>
+</dict>
+</plist>

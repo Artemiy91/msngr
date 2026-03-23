@@ -12,7 +12,7 @@ final class APIStore: RemoteStore {
     private let baseURL: URL
     private let session: URLSession
 
-    init(baseURL: URL = URL(string: "https://api.msngr.example")!, session: URLSession = .shared) {
+    init(baseURL: URL = AppConfig.apiBaseURL, session: URLSession = .shared) {
         self.baseURL = baseURL
         self.session = session
     }
