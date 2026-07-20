@@ -1,20 +1,274 @@
-<?php require_once __DIR__ . '/php/head.php'; ?>
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Beach Club — каталог стильных и практичных товаров для пляжного отдыха с быстрой доставкой.">
+  <title>Beach Club — товары для пляжного отдыха</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="css/style.css">
+</head>
 <body>
-  <?php require_once __DIR__ . '/php/header.php'; ?>
+  <header class="site-header" data-header>
+  <div class="container header-inner">
+    <a class="logo" href="#top" aria-label="Beach Club на главную"><span>Beach</span>Club</a>
+    <nav class="nav" data-menu aria-label="Основное меню">
+  <div class="mobile-menu-head">
+    <a class="logo" href="#top"><span>Beach</span>Club</a>
+    <a class="mobile-phone" href="tel:+78005553535">+7 800 555-35-35</a>
+  </div>
+  <a href="#catalog">Каталог</a>
+  <a href="#popular">Популярное</a>
+  <a href="#promos">Акции</a>
+  <a href="#benefits">Преимущества</a>
+  <a href="#reviews">Отзывы</a>
+  <a href="#faq">FAQ</a>
+</nav>
+<div class="menu-overlay" data-menu-overlay></div>
+    <a class="header-phone" href="tel:+78005553535">+7 800 555-35-35</a>
+    <a class="btn btn-small header-cta" href="#contact">Заказать</a>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" data-menu-toggle>
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
 
   <main id="top">
-    <?php require_once __DIR__ . '/php/catalog-main.php'; ?>
-    <?php require_once __DIR__ . '/php/popular.php'; ?>
-    <?php require_once __DIR__ . '/php/promos.php'; ?>
-    <?php require_once __DIR__ . '/php/about.php'; ?>
-    <?php require_once __DIR__ . '/php/benefits.php'; ?>
-    <?php require_once __DIR__ . '/php/catalog-extra.php'; ?>
-    <?php require_once __DIR__ . '/php/reviews.php'; ?>
-    <?php require_once __DIR__ . '/php/faq.php'; ?>
-    <?php require_once __DIR__ . '/php/contact-form.php'; ?>
+    <section class="hero section" id="catalog">
+  <div class="container">
+    <div class="hero-copy reveal">
+      <p class="eyebrow">Лето начинается здесь</p>
+      <h1>Каталог товаров для яркого пляжного отдыха</h1>
+      <p>Подберите зонты, полотенца, сумки и аксессуары с быстрой доставкой по России.</p>
+      <a class="btn" href="#contact">Получить подборку</a>
+    </div>
+    <div class="product-grid first-grid">
+      <article class="product-card reveal">
+  <div class="product-image">
+    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&amp;fit=crop&amp;w=640&amp;q=70" alt="Зонт Coral Shade" width="640" height="430" fetchpriority="high">
+    <span class="badge">В наличии</span>
+  </div>
+  <div class="product-body">
+    <span class="weight">Вес товара: 1.8 кг</span>
+    <h3>Зонт Coral Shade</h3>
+    <div class="price-row"><b>3 990 ₽</b><span>Замена: 450 ₽</span></div>
+    <p class="delivery">Доставка: 390 ₽</p>
+    <a class="btn btn-card" href="#contact">Купить</a>
+  </div>
+</article>
+<article class="product-card reveal">
+  <div class="product-image">
+    <img src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&amp;fit=crop&amp;w=640&amp;q=70" alt="Пляжная сумка Aqua" width="640" height="430" loading="lazy">
+    <span class="badge">В наличии</span>
+  </div>
+  <div class="product-body">
+    <span class="weight">Вес товара: 0.6 кг</span>
+    <h3>Пляжная сумка Aqua</h3>
+    <div class="price-row"><b>2 190 ₽</b><span>Замена: 290 ₽</span></div>
+    <p class="delivery">Доставка: 250 ₽</p>
+    <a class="btn btn-card" href="#contact">Купить</a>
+  </div>
+</article>
+<article class="product-card reveal">
+  <div class="product-image">
+    <img src="https://images.unsplash.com/photo-1520942702018-0862200e6873?auto=format&amp;fit=crop&amp;w=640&amp;q=70" alt="Коврик Sand Free" width="640" height="430" loading="lazy">
+    <span class="badge">В наличии</span>
+  </div>
+  <div class="product-body">
+    <span class="weight">Вес товара: 0.9 кг</span>
+    <h3>Коврик Sand Free</h3>
+    <div class="price-row"><b>1 790 ₽</b><span>Замена: 250 ₽</span></div>
+    <p class="delivery">Доставка: 240 ₽</p>
+    <a class="btn btn-card" href="#contact">Купить</a>
+  </div>
+</article>
+<article class="product-card reveal">
+  <div class="product-image">
+    <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&amp;fit=crop&amp;w=640&amp;q=70" alt="Маска Wave Pro" width="640" height="430" loading="lazy">
+    <span class="badge">В наличии</span>
+  </div>
+  <div class="product-body">
+    <span class="weight">Вес товара: 0.4 кг</span>
+    <h3>Маска Wave Pro</h3>
+    <div class="price-row"><b>2 690 ₽</b><span>Замена: 320 ₽</span></div>
+    <p class="delivery">Доставка: 220 ₽</p>
+    <a class="btn btn-card" href="#contact">Купить</a>
+  </div>
+</article>
+<article class="product-card reveal">
+  <div class="product-image">
+    <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&amp;fit=crop&amp;w=640&amp;q=70" alt="Полотенце Breeze" width="640" height="430" loading="lazy">
+    <span class="badge">В наличии</span>
+  </div>
+  <div class="product-body">
+    <span class="weight">Вес товара: 0.5 кг</span>
+    <h3>Полотенце Breeze</h3>
+    <div class="price-row"><b>1 490 ₽</b><span>Замена: 190 ₽</span></div>
+    <p class="delivery">Доставка: 210 ₽</p>
+    <a class="btn btn-card" href="#contact">Купить</a>
+  </div>
+</article>
+<article class="product-card reveal">
+  <div class="product-image">
+    <img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&amp;fit=crop&amp;w=640&amp;q=70" alt="Термобутылка Ice" width="640" height="430" loading="lazy">
+    <span class="badge">В наличии</span>
+  </div>
+  <div class="product-body">
+    <span class="weight">Вес товара: 0.3 кг</span>
+    <h3>Термобутылка Ice</h3>
+    <div class="price-row"><b>1 290 ₽</b><span>Замена: 150 ₽</span></div>
+    <p class="delivery">Доставка: 190 ₽</p>
+    <a class="btn btn-card" href="#contact">Купить</a>
+  </div>
+</article>
+<article class="product-card reveal">
+  <div class="product-image">
+    <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&amp;fit=crop&amp;w=640&amp;q=70" alt="Шезлонг Easy Rest" width="640" height="430" loading="lazy">
+    <span class="badge">В наличии</span>
+  </div>
+  <div class="product-body">
+    <span class="weight">Вес товара: 4.2 кг</span>
+    <h3>Шезлонг Easy Rest</h3>
+    <div class="price-row"><b>5 990 ₽</b><span>Замена: 700 ₽</span></div>
+    <p class="delivery">Доставка: 590 ₽</p>
+    <a class="btn btn-card" href="#contact">Купить</a>
+  </div>
+</article>
+<article class="product-card reveal">
+  <div class="product-image">
+    <img src="https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?auto=format&amp;fit=crop&amp;w=640&amp;q=70" alt="Очки Sunny Day" width="640" height="430" loading="lazy">
+    <span class="badge">В наличии</span>
+  </div>
+  <div class="product-body">
+    <span class="weight">Вес товара: 0.1 кг</span>
+    <h3>Очки Sunny Day</h3>
+    <div class="price-row"><b>1 990 ₽</b><span>Замена: 210 ₽</span></div>
+    <p class="delivery">Доставка: 190 ₽</p>
+    <a class="btn btn-card" href="#contact">Купить</a>
+  </div>
+</article>
+    </div>
+  </div>
+</section>
+    <section class="section soft" id="popular"><div class="container"><div class="section-head reveal"><p class="eyebrow">Выбор покупателей</p><h2>Популярные товары</h2></div><div class="product-grid">
+<article class="product-card reveal">
+  <div class="product-image">
+    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&amp;fit=crop&amp;w=640&amp;q=70" alt="Набор Beach Box" width="640" height="430" fetchpriority="high">
+    <span class="badge">В наличии</span>
+  </div>
+  <div class="product-body">
+    <span class="weight">Вес товара: 2.4 кг</span>
+    <h3>Набор Beach Box</h3>
+    <div class="price-row"><b>6 490 ₽</b><span>Замена: 590 ₽</span></div>
+    <p class="delivery">Доставка: 490 ₽</p>
+    <a class="btn btn-card" href="#contact">Купить</a>
+  </div>
+</article>
+<article class="product-card reveal">
+  <div class="product-image">
+    <img src="https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&amp;fit=crop&amp;w=640&amp;q=70" alt="Пончо Surf" width="640" height="430" loading="lazy">
+    <span class="badge">В наличии</span>
+  </div>
+  <div class="product-body">
+    <span class="weight">Вес товара: 0.7 кг</span>
+    <h3>Пончо Surf</h3>
+    <div class="price-row"><b>2 490 ₽</b><span>Замена: 260 ₽</span></div>
+    <p class="delivery">Доставка: 230 ₽</p>
+    <a class="btn btn-card" href="#contact">Купить</a>
+  </div>
+</article>
+<article class="product-card reveal">
+  <div class="product-image">
+    <img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&amp;fit=crop&amp;w=640&amp;q=70" alt="Крем SPF 50" width="640" height="430" loading="lazy">
+    <span class="badge">В наличии</span>
+  </div>
+  <div class="product-body">
+    <span class="weight">Вес товара: 0.2 кг</span>
+    <h3>Крем SPF 50</h3>
+    <div class="price-row"><b>990 ₽</b><span>Замена: 120 ₽</span></div>
+    <p class="delivery">Доставка: 180 ₽</p>
+    <a class="btn btn-card" href="#contact">Купить</a>
+  </div>
+</article>
+<article class="product-card reveal">
+  <div class="product-image">
+    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&amp;fit=crop&amp;w=640&amp;q=70" alt="Гамак Sea Nap" width="640" height="430" loading="lazy">
+    <span class="badge">В наличии</span>
+  </div>
+  <div class="product-body">
+    <span class="weight">Вес товара: 1.1 кг</span>
+    <h3>Гамак Sea Nap</h3>
+    <div class="price-row"><b>3 290 ₽</b><span>Замена: 330 ₽</span></div>
+    <p class="delivery">Доставка: 290 ₽</p>
+    <a class="btn btn-card" href="#contact">Купить</a>
+  </div>
+</article>
+</div></div></section>
+    <section class="section" id="promos"><div class="container promo-grid"><div class="promo-card reveal"><p class="eyebrow">Акция недели</p><h2>-20% на комплекты для двоих</h2><p>Соберите пляжный сет из зонта, коврика и сумки — скидка применится автоматически.</p><a class="btn" href="#contact">Забрать скидку</a></div><div class="promo-card accent reveal"><h3>Бесплатная доставка</h3><p>Для заказов от 7 000 ₽ в пункты выдачи.</p></div></div></section>
+    <section class="section about"><div class="container narrow reveal"><p class="eyebrow">О магазине</p><h2>Мы подбираем вещи, которые делают отдых проще</h2><p>Beach Club — это лёгкие, долговечные и красивые товары для моря, бассейна и пикника. Мы проверяем материалы, вес, упаковку и удобство перевозки, чтобы вы брали с собой только нужное.</p></div></section>
+    <section class="section soft" id="benefits"><div class="container"><div class="section-head reveal"><p class="eyebrow">Почему мы</p><h2>Преимущества</h2></div><div class="benefit-grid">
+<article class="benefit-card reveal"><h3>Быстрая отправка</h3><p>Передаём заказы в доставку в день оплаты.</p></article><article class="benefit-card reveal"><h3>Лёгкий обмен</h3><p>Поможем заменить размер, цвет или модель.</p></article><article class="benefit-card reveal"><h3>Честный вес</h3><p>Указываем вес каждой позиции для удобства.</p></article><article class="benefit-card reveal"><h3>Защита заказа</h3><p>Упаковываем товары от влаги и повреждений.</p></article><article class="benefit-card reveal"><h3>Подбор комплекта</h3><p>Соберём набор под пляж, бассейн или поездку.</p></article><article class="benefit-card reveal"><h3>Поддержка 7 дней</h3><p>Отвечаем в мессенджерах без выходных.</p></article></div></div></section>
+    <section class="section" id="extra"><div class="container"><div class="section-head reveal"><p class="eyebrow">Для поездки</p><h2>Ещё товары</h2></div><div class="product-grid">
+<article class="product-card reveal">
+  <div class="product-image">
+    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&amp;fit=crop&amp;w=640&amp;q=70" alt="Водонепроницаемый чехол" width="640" height="430" fetchpriority="high">
+    <span class="badge">В наличии</span>
+  </div>
+  <div class="product-body">
+    <span class="weight">Вес товара: 0.1 кг</span>
+    <h3>Водонепроницаемый чехол</h3>
+    <div class="price-row"><b>790 ₽</b><span>Замена: 90 ₽</span></div>
+    <p class="delivery">Доставка: 170 ₽</p>
+    <a class="btn btn-card" href="#contact">Купить</a>
+  </div>
+</article>
+<article class="product-card reveal">
+  <div class="product-image">
+    <img src="https://images.unsplash.com/photo-1533331639-7c5257724db0?auto=format&amp;fit=crop&amp;w=640&amp;q=70" alt="Пляжный мяч Palm" width="640" height="430" loading="lazy">
+    <span class="badge">В наличии</span>
+  </div>
+  <div class="product-body">
+    <span class="weight">Вес товара: 0.2 кг</span>
+    <h3>Пляжный мяч Palm</h3>
+    <div class="price-row"><b>690 ₽</b><span>Замена: 90 ₽</span></div>
+    <p class="delivery">Доставка: 170 ₽</p>
+    <a class="btn btn-card" href="#contact">Купить</a>
+  </div>
+</article>
+<article class="product-card reveal">
+  <div class="product-image">
+    <img src="https://images.unsplash.com/photo-1621263764928-df1444c5e859?auto=format&amp;fit=crop&amp;w=640&amp;q=70" alt="Мини-холодильник" width="640" height="430" loading="lazy">
+    <span class="badge">В наличии</span>
+  </div>
+  <div class="product-body">
+    <span class="weight">Вес товара: 3.8 кг</span>
+    <h3>Мини-холодильник</h3>
+    <div class="price-row"><b>7 490 ₽</b><span>Замена: 790 ₽</span></div>
+    <p class="delivery">Доставка: 650 ₽</p>
+    <a class="btn btn-card" href="#contact">Купить</a>
+  </div>
+</article>
+<article class="product-card reveal">
+  <div class="product-image">
+    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&amp;fit=crop&amp;w=640&amp;q=70" alt="Сланцы Soft Step" width="640" height="430" loading="lazy">
+    <span class="badge">В наличии</span>
+  </div>
+  <div class="product-body">
+    <span class="weight">Вес товара: 0.5 кг</span>
+    <h3>Сланцы Soft Step</h3>
+    <div class="price-row"><b>1 390 ₽</b><span>Замена: 180 ₽</span></div>
+    <p class="delivery">Доставка: 210 ₽</p>
+    <a class="btn btn-card" href="#contact">Купить</a>
+  </div>
+</article>
+</div></div></section>
+    <section class="section soft" id="reviews"><div class="container"><div class="section-head reveal"><p class="eyebrow">Отзывы</p><h2>Покупатели возвращаются к нам</h2></div><div class="review-grid"><article class="review reveal"><p>«Заказали комплект на море, всё лёгкое и аккуратно упаковано. Доставили за два дня.»</p><b>Анна, 29</b></article><article class="review reveal"><p>«Понравилась консультация: быстро помогли выбрать зонт и коврик под машину.»</p><b>Илья, 34</b></article><article class="review reveal"><p>«Карточки с весом — супер, сразу понятно, что брать в самолёт.»</p><b>Мария, 24</b></article></div></div></section>
+    <section class="section" id="faq"><div class="container narrow"><div class="section-head reveal"><p class="eyebrow">FAQ</p><h2>Частые вопросы</h2></div><div class="faq-list">
+<div class="faq-item reveal"><button type="button" class="faq-question">Как быстро доставляете?<span>+</span></button><div class="faq-answer"><p>Обычно 1–4 дня в крупные города и 3–7 дней в регионы.</p></div></div><div class="faq-item reveal"><button type="button" class="faq-question">Можно ли вернуть товар?<span>+</span></button><div class="faq-answer"><p>Да, в течение 14 дней при сохранении товарного вида.</p></div></div><div class="faq-item reveal"><button type="button" class="faq-question">Помогаете собрать комплект?<span>+</span></button><div class="faq-answer"><p>Да, оставьте заявку — менеджер предложит 2–3 варианта под ваш бюджет.</p></div></div></div></div></section>
+    <section class="section contact" id="contact"><div class="container contact-card reveal"><div><p class="eyebrow">Обратная связь</p><h2>Оставьте заявку на подбор</h2><p>Перезвоним, уточним задачи и предложим товары для вашего отдыха.</p></div><form class="form" data-form novalidate><label>Имя<input name="name" type="text" minlength="2" required placeholder="Ваше имя"></label><label>Телефон<input name="phone" type="tel" required placeholder="+7 999 123-45-67"></label><label>Комментарий<textarea name="message" rows="4" placeholder="Что хотите подобрать?"></textarea></label><button class="btn" type="submit">Отправить</button><p class="form-message" data-form-message></p></form></div></section>
   </main>
 
-  <?php require_once __DIR__ . '/php/footer.php'; ?>
+  <footer class="footer"><div class="container footer-grid"><a class="logo" href="#top"><span>Beach</span>Club</a><div><h3>Контакты</h3><a href="tel:+78005553535">+7 800 555-35-35</a><a href="mailto:hello@beachclub.ru">hello@beachclub.ru</a></div><div><h3>Разделы</h3><a href="#catalog">Каталог</a><a href="#promos">Акции</a><a href="#faq">FAQ</a></div></div></footer>
   <script src="js/script.js" defer></script>
 </body>
 </html>
