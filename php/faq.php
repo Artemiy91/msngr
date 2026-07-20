@@ -1,0 +1,3 @@
+<section class="section" id="faq"><div class="container narrow"><div class="section-head reveal"><p class="eyebrow">FAQ</p><h2>Частые вопросы</h2></div><div class="faq-list">
+<?php $faqs=[['Как быстро доставляете?','Обычно 1–4 дня в крупные города и 3–7 дней в регионы.'],['Можно ли вернуть товар?','Да, в течение 14 дней при сохранении товарного вида.'],['Помогаете собрать комплект?','Да, оставьте заявку — менеджер предложит 2–3 варианта под ваш бюджет.']]; foreach($faqs as $f): ?><div class="faq-item reveal"><button type="button" class="faq-question"><?= $f[0] ?><span>+</span></button><div class="faq-answer"><p><?= $f[1] ?></p></div></div><?php endforeach; ?>
+</div></div></section>

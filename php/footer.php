@@ -1,0 +1,1 @@
+<footer class="footer"><div class="container footer-grid"><a class="logo" href="#top"><span>Beach</span>Club</a><div><h3>Контакты</h3><a href="tel:+78005553535">+7 800 555-35-35</a><a href="mailto:hello@beachclub.ru">hello@beachclub.ru</a></div><div><h3>Разделы</h3><a href="#catalog">Каталог</a><a href="#promos">Акции</a><a href="#faq">FAQ</a></div></div></footer>
